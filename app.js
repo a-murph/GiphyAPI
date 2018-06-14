@@ -90,4 +90,12 @@ $(document).ready(function() {
 			$(this).attr("data-state", "still");
 		}
 	});
+
+	//click listener for adding new button
+	$("#add-button").on("click", "#add-button-submit", function() {
+		event.preventDefault();
+		var newTopic = $("#add-button-input").val().trim();
+		topics.push(newTopic);
+		displayButtons();
+	});
 });
