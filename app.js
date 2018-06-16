@@ -60,6 +60,7 @@ $(document).ready(function() {
 	
 				//add img to div
 				gifDiv.append(gifImg);
+				gifDiv.attr("class", "gif-div");
 	
 				//add new elements for holding rating and url
 				var gifRating = $("<p>");
